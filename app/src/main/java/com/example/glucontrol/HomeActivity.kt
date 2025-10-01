@@ -49,7 +49,8 @@ class HomeActivity : AppCompatActivity() {
 
         // Botones de medir glucosa
         btnMedir.setOnClickListener {
-            startActivity(Intent(this, MedirGlucosaActivity::class.java))
+            val intent = Intent(this, webview::class.java)
+            startActivity(intent)
         }
 
         btnMedir2.setOnClickListener {

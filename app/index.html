@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Realidad Aumentada</title>
+
+    <!-- Scripts de A-Frame y MindAR -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #000;
+        }
+
+        #loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #loading h2 {
+            margin-bottom: 20px;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #ffffff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #error {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            z-index: 1001;
+        }
+
+        a-scene {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<!-- Pantalla de carga -->
+<div id="loading">
+    <h2>Cargando Realidad Aumentada</h2>
+    <div class="spinner"></div>
+    <p>Por favor espera...</p>
+</div>
+
+<!-- Mensaje de error -->
+<div id="error">
+    <h3>Error</h3>
+    <p id="error-message"></p>
+    <button onclick="location.reload()">Reintentar</button>
+</div>
+
+<!-- Escena de A-Frame -->
+<a-scene
+        mindar-image="imageTargetSrc: ./targets.mind; autoStart: true; maxTrack: 2;"
+        embedded
+        renderer="colorManagement: true; physicallyCorrectLights: true;"
+        vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false">
+
+    <a-assets>
+        <a-asset-item id="piramidModel" src="./piramid.glb"></a-asset-item>
+    </a-assets>
+
+    <a-camera position="0 0 0" look-controls="enabled: false" active="true"></a-camera>
+
+    <!-- Target 0 -->
+    <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model
+                src="#piramidModel"
+                position="0 0 0"
+                rotation="0 0 0"
+                scale="0.05 0.05 0.05"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        </a-gltf-model>
+    </a-entity>
+</a-scene>
+
+<script>
+    // Esperar a que cargue la escena
+    const scene = document.querySelector('a-scene');
+    const loading = document.getElementById('loading');
+    const errorDiv = document.getElementById('error');
+    const errorMessage = document.getElementById('error-message');
+
+    // Evento cuando la escena está lista
+    scene.addEventListener('loaded', function() {
+        console.log('Escena cargada correctamente');
+        setTimeout(() => {
+            loading.style.display = 'none';
+        }, 2000);
+    });
+
+    // Manejar errores
+    scene.addEventListener('error', function(e) {
+        console.error('Error en la escena:', e);
+        showError('Error al inicializar la realidad aumentada');
+    });
+
+    // Eventos de MindAR
+    scene.addEventListener('mindar-target-found', function(e) {
+        console.log('Target encontrado:', e.detail.target);
+    });
+
+    scene.addEventListener('mindar-target-lost', function(e) {
+        console.log('Target perdido:', e.detail.target);
+    });
+
+    // Función para mostrar errores
+    function showError(message) {
+        errorMessage.textContent = message;
+        errorDiv.style.display = 'block';
+        loading.style.display = 'none';
+    }
+
+    // Verificar si hay errores después de 10 segundos
+    setTimeout(() => {
+        if (loading.style.display !== 'none') {
+            showError('Tiempo de espera agotado. Verifica tu conexión e intenta nuevamente.');
+        }
+    }, 10000);
+
+    // Log para debugging
+    console.log('HTML cargado correctamente');
+    console.log('A-Frame version:', AFRAME.version);
+</script>
+</body>
+</html>
