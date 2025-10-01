@@ -59,14 +59,16 @@ class GenerarRecordatorio : AppCompatActivity() {
                 .filter { it.isChecked }
                 .map { it.text.toString() }
 
-            val recordatorioNuevo = "$hour:$minute - $nota - Días: ${diasSeleccionados.joinToString(", ")}"
+            val recordatorioNuevo =
+                "$hour:$minute - $nota - Días: ${diasSeleccionados.joinToString(", ")}"
 
             // Guardar en SharedPreferences
             val sharedPref = getSharedPreferences("recordatorios", MODE_PRIVATE)
             val editor = sharedPref.edit()
 
             // Obtener lista existente
-            val recordatoriosExistentes = sharedPref.getStringSet("lista_recordatorios", mutableSetOf()) ?: mutableSetOf()
+            val recordatoriosExistentes =
+                sharedPref.getStringSet("lista_recordatorios", mutableSetOf()) ?: mutableSetOf()
 
             // Agregar nuevo recordatorio
             val nuevosRecordatorios = recordatoriosExistentes.toMutableSet()
@@ -79,39 +81,12 @@ class GenerarRecordatorio : AppCompatActivity() {
             // Confirmación al usuario
             Toast.makeText(this, "Recordatorio guardado", Toast.LENGTH_SHORT).show()
 
-            // Ir a la pantalla de visualización
-            val intent = Intent(this, VerRecordatorio::class.java)
-            startActivity(intent)
+
         }
 
         // Acción botón volver
         btnBack.setOnClickListener {
             finish()
-        }
-
-        // Bottom Navigation
-        bottomNav.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.menu_inicio -> {
-                    startActivity(
-                        Intent(this, HomeActivity::class.java)
-                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-                    )
-                    true
-                }
-
-                R.id.menu_reportes -> {
-                    startActivity(Intent(this, Reportes::class.java))
-                    true
-                }
-
-                R.id.menu_notificaciones -> {
-                    Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show()
-                    true
-                }
-
-                else -> false
-            }
         }
     }
 }

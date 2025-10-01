@@ -75,7 +75,7 @@ class ChatBoot : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-
+        // Liberar recursos de TTS
         if (::tts.isInitialized) {
             tts.stop()
             tts.shutdown()

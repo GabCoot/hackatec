@@ -48,30 +48,13 @@ class Reportes : AppCompatActivity() {
         findViewById<Button>(R.id.btnExportar).setOnClickListener { exportar() }
         findViewById<ImageButton>(R.id.btnBorrar).setOnClickListener { borrarSeleccionados() }
 
-        configurarBottomNav()
+
         cargarRegistros()
         dibujarRegistros()
     }
 
     /* ------------------ BOTTOM NAV ------------------ */
-    private fun configurarBottomNav() {
-        bottomNav.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.menu_inicio -> {
-                    startActivity(
-                        Intent(this, HomeActivity::class.java)
-                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-                    ); true
-                }
-                R.id.menu_reportes -> true
-                R.id.menu_notificaciones -> {
-                    Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show(); true
-                }
-                else -> false
-            }
-        }
-        bottomNav.selectedItemId = R.id.menu_reportes
-    }
+
 
     /* ------------------- CARGAR / SALVAR ------------------- */
     private fun cargarRegistros() {

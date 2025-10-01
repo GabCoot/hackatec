@@ -99,23 +99,7 @@ class Resultados : AppCompatActivity() {
 
         binding.btnBack.setOnClickListener { finish() }
 
-        binding.bottomNavigation.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.menu_inicio -> {
-                    startActivity(
-                        Intent(this, HomeActivity::class.java)
-                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-                    ); true
-                }
-                R.id.menu_reportes -> {
-                    startActivity(Intent(this, Reportes::class.java)); true
-                }
-                R.id.menu_notificaciones -> {
-                    Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show(); true
-                }
-                else -> false
-            }
-        }
+      
     }
 
     private fun mostrarGrafico(lista: List<Muestra>) {
