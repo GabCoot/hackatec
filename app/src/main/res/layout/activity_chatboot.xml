@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Toolbar fija arriba -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#CCCCFF"
+        android:elevation="4dp"
+        android:title="Chat IA"
+        android:titleTextColor="#2F2F2F"
+        app:navigationIcon="@android:drawable/ic_menu_revert" />
+
+
+    <!-- Contenido debajo de la toolbar -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- RecyclerView para los mensajes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@color/white"/>
+
+        <!-- Entrada de mensaje y botón -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/entradamensaje"
+                android:padding="12dp"
+                android:hint="Escribe un mensaje..."
+                android:textColor="#000000"
+                android:textColorHint="#2F2F2F"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minHeight="48dp"/>
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="49dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#B196E4"
+                app:icon="@drawable/mensaje"
+                app:iconPadding="8dp"
+                app:iconGravity="start" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

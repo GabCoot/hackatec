@@ -1,0 +1,608 @@
+[
+  {
+    "keywords": ["hola", "buenos días", "buenas tardes", "buenas noches"],
+    "response": "¡Hola!😊 ¿Cómo estás? ¿En qué puedo ayudarte hoy?"
+  },
+  {
+    "keywords": ["cómo estás", "qué tal", "cómo te va"],
+    "response": "¡Estoy muy bien, gracias por preguntar! 🤖 ¿Y tú cómo estás?"
+  },
+  {
+    "keywords": ["qué puedes hacer", "qué sabes hacer", "cuál es tu función"],
+    "response": "Puedo conversar contigo, responder preguntas simples, contarte chistes y más. ¡Explora lo que puedo hacer! 💡"
+  },
+  {
+    "keywords": ["cuál es tu nombre", "cómo te llamas", "quien eres", "que haces", "cual es tu funcion"],
+    "response": "Soy tu asistente virtual, desarrollado por GluControl y estoy aqui para ayudarte en tus preguntas a cerca de la diabetes \uD83E\uDD16"
+  },
+  {
+    "keywords": ["qué hora es", "me dices la hora", "sabes la hora"],
+    "response": "⏰ Es hora de hacer el cambio, ¡Vamos pongamos manos a la obra!"
+  },
+  {
+    "keywords": ["cuál es la capital de México", "capital de México", "dónde está la Ciudad de México"],
+    "response": "La capital de México es la Ciudad de México 🇲🇽, también conocida como CDMX. ¡Es una ciudad enorme y llena de historia!"
+  },
+  {
+    "keywords": ["recomiéndame una película", "películas buenas", "qué puedo ver"],
+    "response": "🎬 Podrías ver 'Coco' (si te gusta la animación), 'Interestelar' (si amas el espacio) o 'Forrest Gump' (si quieres inspiración)."
+  },
+  {
+    "keywords": ["cuéntame un chiste", "dime un chiste", "sabes chistes"],
+    "response": "😄 ¿Qué le dice una iguana a su hermana gemela? ¡Iguanita!"
+  },
+  {
+    "keywords": ["qué es el sol", "qué es una estrella", "cuál es la estrella más cercana"],
+    "response": "🌞 El Sol es una estrella, ¡la más cercana a la Tierra! Gracias a él tenemos luz y calor."
+  },
+  {
+    "keywords": ["cuánto es 2 más 2", "suma 2 y 2", "2+2"],
+    "response": "🧮 2 más 2 es igual a 4. Fácil, ¿verdad?"
+  },
+  {
+    "keywords": ["me puedes ayudar", "ayúdame", "necesito ayuda"],
+    "response": "¡Claro que sí! 🆘 Cuéntame qué necesitas y haré lo posible por ayudarte."
+  },
+  {
+    "keywords": ["qué día es hoy", "me dices la fecha"],
+    "response": "📅 Hoy es dia de ser mejor persona que ayer ¡Animo tu puedes!"
+  },
+  {
+    "keywords": ["qué es la inteligencia artificial", "qué es una IA", "cómo funciona la inteligencia artificial"],
+    "response": "La inteligencia artificial 🤖 es una rama de la tecnología que permite a las máquinas 'aprender' y resolver tareas como si fueran inteligentes. ¡Como yo! 😁"
+  },
+  {
+    "keywords": ["gracias", "muchas gracias"],
+    "response": "¡De nada! 😊 Me alegra poder ayudarte."
+  },
+  {
+    "keywords": ["adiós", "nos vemos", "hasta luego"],
+    "response": "¡Hasta pronto! 👋 Espero volver a conversar contigo pronto."
+  },
+  {
+    "keywords": ["te gusta la música", "qué música escuchas", "recomiéndame música"],
+    "response": "🎧 ¡Me encanta la música! Aunque no puedo oírla como tú, muchos humanos disfrutan géneros como pop, rock, reggaetón o electrónica. ¿Qué te gusta a ti?"
+  },
+  {
+    "keywords": ["qué es un robot", "qué hacen los robots"],
+    "response": "Un robot es una máquina que puede realizar tareas de manera automática 🛠️. Algunos ayudan en fábricas, otros en hospitales, y algunos incluso limpian tu casa."
+  },
+  {
+    "keywords": ["qué juegos me recomiendas", "quiero jugar algo", "juegos divertidos"],
+    "response": "🎮 Puedes probar juegos como Minecraft, Among Us, Clash Royale o juegos de mesa clásicos como ajedrez o UNO. ¡Hay para todos los gustos!"
+  },
+  {
+    "keywords": ["qué es el universo", "cómo se creó el universo"],
+    "response": "El universo 🌌 es todo lo que existe: planetas, estrellas, galaxias y más. La teoría más aceptada sobre su origen es el Big Bang."
+  },
+  {
+    "keywords": ["cómo se dice hola en inglés", "traduce hola", "hola en inglés"],
+    "response": "Se dice *Hello* 👋 en inglés. ¡Muy fácil!"
+  },
+  {
+    "keywords": ["default"],
+    "response": "\uD83D\uDE15 Ocurrió un error inesperado. Intenta de nuevo más tarde."
+  },
+  {
+    "keywords": [
+      "glucosa muy alta",
+      "glucosa muy baja",
+      "tengo la glucosa alta",
+      "tengo la glucosa baja",
+      "qué hago si mi glucosa está alta",
+      "qué hago si mi glucosa está baja",
+      "nivel alto de glucosa",
+      "nivel bajo de glucosa",
+      "hiperglucemia",
+      "hipoglucemia"
+    ],
+    "response": "Si tienes la glucosa muy alta o baja, busca un lugar seguro, mide tus niveles si puedes, consume algo apropiado (azúcar si está baja, agua e insulina si está alta según indicación médica) y contacta a un profesional de salud."
+  },
+  {
+    "keywords": [
+      "cómo saber si tengo hipoglucemia",
+      "cómo saber si tengo hiperglucemia",
+      "síntomas de hipoglucemia",
+      "síntomas de hiperglucemia",
+      "me siento raro",
+      "glucosa baja o alta",
+      "cómo sé si tengo la glucosa baja",
+      "cómo sé si tengo la glucosa alta"
+    ],
+    "response": "La hipoglucemia suele causar sudor, temblores, hambre o confusión. La hiperglucemia puede provocar sed, orina frecuente, visión borrosa o cansancio. Si tienes dudas, mide tu glucosa y consulta a un médico."
+  },
+  {
+    "keywords": [
+      "cuántas veces debo revisar mi glucosa",
+      "cuántas veces medir la glucosa",
+      "cada cuánto me reviso la glucosa",
+      "frecuencia de medición",
+      "revisar azúcar",
+      "controlar niveles"
+    ],
+    "response": "La frecuencia varía según cada persona, pero en general se recomienda medir la glucosa entre 1 y 4 veces al día, especialmente en ayunas y después de comer."
+  },
+  {
+    "keywords": [
+      "puedo medir mi glucosa ahora",
+      "medir glucosa con app",
+      "puedo revisar mi azúcar",
+      "glucosa desde la app",
+      "usar app para medir glucosa",
+      "quiero saber mi glucosa ahora"
+    ],
+    "response": "Puedes usar la función de medición si tu dispositivo es compatible con sensores habilitados. Asegúrate de seguir las instrucciones del dispositivo vinculado."
+  },
+  {
+    "keywords": [
+      "qué comer con glucosa alta",
+      "alimentos para glucosa alta",
+      "qué debo comer",
+      "dieta para diabetes",
+      "comida para bajar glucosa",
+      "recomendaciones de comida",
+      "menú saludable"
+    ],
+    "response": "Opta por alimentos integrales, verduras, proteínas magras y evita azúcares simples o harinas refinadas. Una dieta equilibrada puede ayudarte a mantener niveles estables."
+  },
+  {
+    "keywords": [
+      "alimentos que debo evitar",
+      "qué no debo comer",
+      "prohibido para diabéticos",
+      "qué evitar si tengo diabetes",
+      "alimentos malos para diabetes",
+      "cosas que dañan al diabético"
+    ],
+    "response": "Debes evitar alimentos con alto contenido de azúcar, refrescos, jugos industriales, pan blanco, pasteles, y frituras. Consulta con un nutriólogo para un plan personalizado."
+  },
+  {
+    "keywords": [
+      "puedo comer mango",
+      "puedo comer plátano",
+      "frutas dulces",
+      "qué frutas puedo comer",
+      "puedo comer frutas si tengo diabetes",
+      "frutas recomendadas para diabetes"
+    ],
+    "response": "Puedes comer frutas con moderación. Prefiere manzana, pera o frutos rojos. Evita porciones grandes de frutas muy dulces como mango o plátano."
+  },
+  {
+    "keywords": [
+      "cuántas veces debo comer",
+      "frecuencia de comidas",
+      "horarios para comer",
+      "cuántas comidas al día",
+      "cuántas veces al día se come"
+    ],
+    "response": "Se recomienda comer de 3 a 5 veces al día, incluyendo colaciones saludables. Mantener horarios fijos ayuda a controlar la glucosa."
+  },
+  {
+    "keywords": [
+      "ejercicio para diabéticos",
+      "qué ejercicio puedo hacer",
+      "actividad física",
+      "puedo hacer ejercicio",
+      "ejercicio recomendado para diabetes",
+      "debo hacer ejercicio"
+    ],
+    "response": "El ejercicio regular es clave. Caminar, nadar, andar en bicicleta o yoga son buenas opciones. Consulta a tu médico antes de comenzar cualquier rutina."
+  },
+  {
+    "keywords": [
+      "me siento mareado",
+      "estoy mareado",
+      "mareo por glucosa",
+      "tengo mareo",
+      "diabetes y mareo"
+    ],
+    "response": "El mareo puede estar relacionado con niveles bajos o altos de glucosa. Si puedes, mide tus niveles y descansa. Si el mareo persiste, acude al médico."
+  },
+  {
+    "keywords": [
+      "visión borrosa",
+      "veo borroso",
+      "ojos y diabetes",
+      "problemas de vista",
+      "diabetes y visión"
+    ],
+    "response": "La visión borrosa puede deberse a glucosa alta. Si es frecuente, es recomendable acudir con un especialista en salud visual."
+  },
+  {
+    "keywords": [
+      "cuándo ir al hospital",
+      "cuándo buscar ayuda médica",
+      "urgencia por glucosa",
+      "niveles peligrosos",
+      "glucosa muy alta",
+      "hospital por glucosa"
+    ],
+    "response": "Si tienes glucosa muy alta (mayor a 250 mg/dL) o muy baja (menor a 55 mg/dL) y síntomas como confusión, vómito o desmayo, busca atención médica de inmediato."
+  },
+  {
+    "keywords": [
+      "olvidé medir mi glucosa",
+      "no medí la glucosa",
+      "se me pasó revisar",
+      "no revisé mis niveles",
+      "qué pasa si no me mido"
+    ],
+    "response": "No pasa nada si lo olvidaste una vez, pero trata de retomar tus controles lo antes posible. La constancia es importante para el manejo de la diabetes."
+  },
+  {
+    "keywords": [
+      "puedo conducir con glucosa baja",
+      "conducir con hipoglucemia",
+      "es seguro manejar",
+      "manejar con azúcar baja"
+    ],
+    "response": "No es seguro conducir con niveles bajos de glucosa. Asegúrate de estar dentro de un rango estable antes de manejar."
+  },
+  {
+    "keywords": [
+      "encontrar un médico",
+      "ayuda médica",
+      "consultar doctor",
+      "quiero un doctor",
+      "médico cerca de mí",
+      "contactar especialista",
+      "buscar ayuda profesional"
+    ],
+    "response": "Te recomiendo contactar a un médico general o endocrinólogo para el manejo de tu diabetes. La app puede mostrarte opciones cercanas si está habilitada esa función."
+  },
+  {
+    "keywords": [
+      "hablar con un especialista",
+      "consultar desde la app",
+      "charlar con doctor",
+      "tengo una duda médica",
+      "consultar por chat",
+      "puedo hablar con un médico",
+      "consulta virtual"
+    ],
+    "response": "Actualmente no tenemos consultas virtuales activas, pero puedes agendar una con tu centro de salud más cercano o consultar en línea si lo permite tu sistema médico."
+  },
+  {
+    "keywords": [
+      "recomendaciones para pies",
+      "cuidado de pies",
+      "cómo cuidar mis pies",
+      "pies y diabetes",
+      "problemas en los pies",
+      "heridas en los pies"
+    ],
+    "response": "Lava y revisa tus pies diariamente, evita caminar descalzo y usa calzado cómodo. Consulta si ves heridas o cambios en la piel."
+  },
+  {
+    "keywords": [
+      "afecta la diabetes a órganos",
+      "órganos y diabetes",
+      "daño por diabetes",
+      "consecuencias de diabetes",
+      "diabetes y salud general",
+      "complicaciones de la diabetes"
+    ],
+    "response": "La diabetes puede afectar órganos como riñones, ojos, corazón y nervios si no se controla. Por eso es importante mantener niveles adecuados de glucosa."
+  },
+  {
+    "keywords": [
+      "se puede curar la diabetes",
+      "cura para la diabetes",
+      "la diabetes tiene cura",
+      "puedo curarme",
+      "diabetes reversible",
+      "sanar de la diabetes"
+    ],
+    "response": "La diabetes tipo 1 no tiene cura. La tipo 2 puede controlarse muy bien con hábitos saludables, pero no se considera curable."
+  },
+  {
+    "keywords": [
+      "glucosa muy alta",
+      "glucosa muy baja",
+      "tengo la glucosa alta",
+      "tengo la glucosa baja",
+      "qué hago si mi glucosa está alta",
+      "qué hago si mi glucosa está baja",
+      "nivel alto de glucosa",
+      "nivel bajo de glucosa",
+      "hiperglucemia",
+      "hipoglucemia"
+    ],
+    "response": "Si tienes la glucosa muy alta o baja, busca un lugar seguro, mide tus niveles si puedes, consume algo apropiado (azúcar si está baja, agua e insulina si está alta según indicación médica) y contacta a un profesional de salud."
+  },
+  {
+    "keywords": [
+      "cómo saber si tengo hipoglucemia",
+      "cómo saber si tengo hiperglucemia",
+      "síntomas de hipoglucemia",
+      "síntomas de hiperglucemia",
+      "me siento raro",
+      "glucosa baja o alta",
+      "cómo sé si tengo la glucosa baja",
+      "cómo sé si tengo la glucosa alta"
+    ],
+    "response": "La hipoglucemia suele causar sudor, temblores, hambre o confusión. La hiperglucemia puede provocar sed, orina frecuente, visión borrosa o cansancio. Si tienes dudas, mide tu glucosa y consulta a un médico."
+  },
+  {
+    "keywords": [
+      "cuántas veces debo revisar mi glucosa",
+      "cuántas veces medir la glucosa",
+      "cada cuánto me reviso la glucosa",
+      "frecuencia de medición",
+      "revisar azúcar",
+      "controlar niveles"
+    ],
+    "response": "La frecuencia varía según cada persona, pero en general se recomienda medir la glucosa entre 1 y 4 veces al día, especialmente en ayunas y después de comer."
+  },
+  {
+    "keywords": [
+      "puedo medir mi glucosa ahora",
+      "medir glucosa con app",
+      "puedo revisar mi azúcar",
+      "glucosa desde la app",
+      "usar app para medir glucosa",
+      "quiero saber mi glucosa ahora"
+    ],
+    "response": "Puedes usar la función de medición si tu dispositivo es compatible con sensores habilitados. Asegúrate de seguir las instrucciones del dispositivo vinculado."
+  },
+  {
+    "keywords": [
+      "qué comer con glucosa alta",
+      "alimentos para glucosa alta",
+      "qué debo comer",
+      "dieta para diabetes",
+      "comida para bajar glucosa",
+      "recomendaciones de comida",
+      "menú saludable"
+    ],
+    "response": "Opta por alimentos integrales, verduras, proteínas magras y evita azúcares simples o harinas refinadas. Una dieta equilibrada puede ayudarte a mantener niveles estables."
+  },
+  {
+    "keywords": [
+      "alimentos que debo evitar",
+      "qué no debo comer",
+      "prohibido para diabéticos",
+      "qué evitar si tengo diabetes",
+      "alimentos malos para diabetes",
+      "cosas que dañan al diabético"
+    ],
+    "response": "Debes evitar alimentos con alto contenido de azúcar, refrescos, jugos industriales, pan blanco, pasteles, y frituras. Consulta con un nutriólogo para un plan personalizado."
+  },
+  {
+    "keywords": [
+      "puedo comer mango",
+      "puedo comer plátano",
+      "frutas dulces",
+      "qué frutas puedo comer",
+      "puedo comer frutas si tengo diabetes",
+      "frutas recomendadas para diabetes"
+    ],
+    "response": "Puedes comer frutas con moderación. Prefiere manzana, pera o frutos rojos. Evita porciones grandes de frutas muy dulces como mango o plátano."
+  },
+  {
+    "keywords": [
+      "cuántas veces debo comer",
+      "frecuencia de comidas",
+      "horarios para comer",
+      "cuántas comidas al día",
+      "cuántas veces al día se come"
+    ],
+    "response": "Se recomienda comer de 3 a 5 veces al día, incluyendo colaciones saludables. Mantener horarios fijos ayuda a controlar la glucosa."
+  },
+  {
+    "keywords": [
+      "ejercicio para diabéticos",
+      "qué ejercicio puedo hacer",
+      "actividad física",
+      "puedo hacer ejercicio",
+      "ejercicio recomendado para diabetes",
+      "debo hacer ejercicio"
+    ],
+    "response": "El ejercicio regular es clave. Caminar, nadar, andar en bicicleta o yoga son buenas opciones. Consulta a tu médico antes de comenzar cualquier rutina."
+  },
+  {
+    "keywords": [
+      "me siento mareado",
+      "estoy mareado",
+      "mareo por glucosa",
+      "tengo mareo",
+      "diabetes y mareo"
+    ],
+    "response": "El mareo puede estar relacionado con niveles bajos o altos de glucosa. Si puedes, mide tus niveles y descansa. Si el mareo persiste, acude al médico."
+  },
+  {
+    "keywords": [
+      "visión borrosa",
+      "veo borroso",
+      "ojos y diabetes",
+      "problemas de vista",
+      "diabetes y visión"
+    ],
+    "response": "La visión borrosa puede deberse a glucosa alta. Si es frecuente, es recomendable acudir con un especialista en salud visual."
+  },
+  {
+    "keywords": [
+      "cuándo ir al hospital",
+      "cuándo buscar ayuda médica",
+      "urgencia por glucosa",
+      "niveles peligrosos",
+      "glucosa muy alta",
+      "hospital por glucosa"
+    ],
+    "response": "Si tienes glucosa muy alta (mayor a 250 mg/dL) o muy baja (menor a 55 mg/dL) y síntomas como confusión, vómito o desmayo, busca atención médica de inmediato."
+  },
+  {
+    "keywords": [
+      "olvidé medir mi glucosa",
+      "no medí la glucosa",
+      "se me pasó revisar",
+      "no revisé mis niveles",
+      "qué pasa si no me mido"
+    ],
+    "response": "No pasa nada si lo olvidaste una vez, pero trata de retomar tus controles lo antes posible. La constancia es importante para el manejo de la diabetes."
+  },
+  {
+    "keywords": [
+      "puedo conducir con glucosa baja",
+      "conducir con hipoglucemia",
+      "es seguro manejar",
+      "manejar con azúcar baja"
+    ],
+    "response": "No es seguro conducir con niveles bajos de glucosa. Asegúrate de estar dentro de un rango estable antes de manejar."
+  },
+  {
+    "keywords": [
+      "encontrar un médico",
+      "ayuda médica",
+      "consultar doctor",
+      "quiero un doctor",
+      "médico cerca de mí",
+      "contactar especialista",
+      "buscar ayuda profesional"
+    ],
+    "response": "Te recomiendo contactar a un médico general o endocrinólogo para el manejo de tu diabetes. La app puede mostrarte opciones cercanas si está habilitada esa función."
+  },
+  {
+    "keywords": [
+      "hablar con un especialista",
+      "consultar desde la app",
+      "charlar con doctor",
+      "tengo una duda médica",
+      "consultar por chat",
+      "puedo hablar con un médico",
+      "consulta virtual"
+    ],
+    "response": "Actualmente no tenemos consultas virtuales activas, pero puedes agendar una con tu centro de salud más cercano o consultar en línea si lo permite tu sistema médico."
+  },
+  {
+    "keywords": [
+      "recomendaciones para pies",
+      "cuidado de pies",
+      "cómo cuidar mis pies",
+      "pies y diabetes",
+      "problemas en los pies",
+      "heridas en los pies"
+    ],
+    "response": "Lava y revisa tus pies diariamente, evita caminar descalzo y usa calzado cómodo. Consulta si ves heridas o cambios en la piel."
+  },
+  {
+    "keywords": [
+      "afecta la diabetes a órganos",
+      "órganos y diabetes",
+      "daño por diabetes",
+      "consecuencias de diabetes",
+      "diabetes y salud general",
+      "complicaciones de la diabetes"
+    ],
+    "response": "La diabetes puede afectar órganos como riñones, ojos, corazón y nervios si no se controla. Por eso es importante mantener niveles adecuados de glucosa."
+  },
+  {
+    "keywords": [
+      "se puede curar la diabetes",
+      "cura para la diabetes",
+      "la diabetes tiene cura",
+      "puedo curarme",
+      "diabetes reversible",
+      "sanar de la diabetes"
+    ],
+    "response": "La diabetes tipo 1 no tiene cura. La tipo 2 puede controlarse muy bien con hábitos saludables, pero no se considera curable."
+  },
+  {
+    "keywords": [
+      "qué debo hacer si tengo diabetes",
+      "cómo vivir con diabetes",
+      "qué hacer en caso de tener diabetes",
+      "consejos para diabéticos",
+      "recomendaciones para personas con diabetes"
+    ],
+    "response": "Vivir con diabetes requiere hábitos saludables: come balanceado, mantente activo, monitorea tus niveles de glucosa, evita el estrés y acude regularmente al médico."
+  },
+  {
+    "keywords": [
+      "qué no debo hacer si tengo diabetes",
+      "errores comunes con diabetes",
+      "cosas que debo evitar",
+      "qué está prohibido para diabéticos",
+      "acciones que no debo hacer con diabetes"
+    ],
+    "response": "Evita el consumo excesivo de azúcares, el sedentarismo, el tabaquismo, el alcohol sin control, y nunca ignores tus síntomas. Consulta siempre con profesionales de la salud."
+  },
+  {
+    "keywords": [
+      "qué debo comer",
+      "alimentos recomendados",
+      "qué alimentos son buenos",
+      "menú para diabetes",
+      "comidas saludables para diabéticos"
+    ],
+    "response": "Incluye verduras, frutas con bajo índice glucémico, legumbres, cereales integrales y proteínas magras en tu dieta. Mantente bien hidratado y come en horarios regulares."
+  },
+  {
+    "keywords": [
+      "qué no debo comer",
+      "alimentos que debo evitar",
+      "comida que hace daño",
+      "alimentos malos",
+      "qué me hace daño si tengo diabetes"
+    ],
+    "response": "Evita bebidas azucaradas, pan blanco, dulces, pasteles, comida rápida y alimentos con mucha grasa saturada. Consulta con un especialista para un plan personalizado."
+  },
+  {
+    "keywords": [
+      "qué debo hacer si tengo síntomas",
+      "qué hago si tengo mareos",
+      "cómo actuar ante síntomas",
+      "qué hacer si me siento mal",
+      "cómo reaccionar ante señales de alerta"
+    ],
+    "response": "Escucha a tu cuerpo. Si te sientes débil, mareado o confundido, busca un lugar seguro y si puedes, mide tu glucosa. Acude a un médico si los síntomas persisten."
+  },
+  {
+    "keywords": [
+      "qué no debo hacer si tengo síntomas",
+      "errores ante síntomas",
+      "actuar mal ante diabetes",
+      "qué no hacer si tengo una crisis",
+      "acciones a evitar en hipoglucemia o hiperglucemia"
+    ],
+    "response": "No ignores los síntomas ni te automediques. No manejes ni hagas ejercicio intenso si te sientes mal. Consulta a un profesional si tienes dudas."
+  },
+  {
+    "keywords": [
+      "la diabetes es grave",
+      "la diabetes puede matarme",
+      "riesgos de la diabetes",
+      "peligros de la diabetes",
+      "qué tan peligrosa es la diabetes"
+    ],
+    "response": "La diabetes no controlada puede causar complicaciones graves. Sin embargo, con buenos hábitos y atención médica puedes llevar una vida saludable y plena."
+  },
+  {
+    "keywords": [
+      "qué pasa si no cuido mi diabetes",
+      "consecuencias de no tratar la diabetes",
+      "riesgos de no controlar la glucosa",
+      "qué sucede si no me cuido",
+      "consecuencia de la diabetes"
+    ],
+    "response": "No controlar la diabetes puede afectar tus riñones, ojos, corazón y nervios. Es importante mantener tus hábitos saludables y seguir el control médico adecuado."
+  },
+  {
+    "keywords": [
+      "cuál es el mejor estilo de vida para diabéticos",
+      "cómo debe vivir una persona con diabetes",
+      "estilo de vida saludable",
+      "rutina para personas con diabetes"
+    ],
+    "response": "Llevar un estilo de vida activo, comer balanceado, dormir bien, evitar el estrés y mantenerse informado sobre su condición son claves para manejar la diabetes."
+  },
+  {
+    "keywords": [
+      "cómo prevenir complicaciones",
+      "cómo evitar problemas",
+      "prevención de diabetes avanzada",
+      "prevenir daño por diabetes"
+    ],
+    "response": "Controlar la glucosa, hacer ejercicio, mantener una dieta adecuada y acudir regularmente al médico te ayudará a prevenir complicaciones a largo plazo."
+  }
+]
