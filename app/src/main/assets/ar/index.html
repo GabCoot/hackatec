@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AR Pirámide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <!-- AR.js -->
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin:0; overflow:hidden;">
+
+<a-scene embedded arjs="sourceType: webcam;">
+
+    <!-- Marcador tipo 'hiro' (puedes cambiar a tu .patt si quieres) -->
+    <a-marker preset="hiro">
+        <!-- Modelo 3D de la pirámide -->
+        <a-entity
+                gltf-model="models/piramide.glb"
+                scale="0.5 0.5 0.5"
+                position="0 0 0"
+                rotation="0 0 0">
+        </a-entity>
+    </a-marker>
+
+    <!-- Cámara AR -->
+    <a-entity camera></a-entity>
+
+</a-scene>
+
+</body>
+</html>
