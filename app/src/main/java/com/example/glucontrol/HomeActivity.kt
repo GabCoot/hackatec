@@ -79,25 +79,5 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, EstiloVida::class.java))
         }
 
-        // Navegación inferior
-        bottomNav.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.menu_inicio -> {
-                    val intent = Intent(this, HomeActivity::class.java)
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-                    startActivity(intent)
-                    true
-                }
-                R.id.menu_reportes -> {
-                    startActivity(Intent(this, Reportes::class.java))
-                    true
-                }
-                R.id.menu_notificaciones -> {
-                    Toast.makeText(this, "Ver Notificaciones", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                else -> false
-            }
-        }
     }
 }

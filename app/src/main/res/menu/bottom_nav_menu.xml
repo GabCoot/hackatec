@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
-        android:id="@+id/menu_inicio"
-        android:icon="@drawable/inicio"
-        android:title="Inicio" />
+        android:id="@+id/nav_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/user" />
+
     <item
-        android:id="@+id/menu_reportes"
-        android:icon="@drawable/reportes"
-        android:title="Reportes" />
+        android:id="@+id/nav_info"
+        android:title="Info"
+        android:icon="@drawable/info" />
+
     <item
-        android:id="@+id/menu_notificaciones"
-        android:icon="@drawable/notificaciones"
-        android:title="Notificación" />
+        android:id="@+id/nav_salir"
+        android:title="Cerrar sesión"
+        android:icon="@drawable/salir" />
+
 </menu>
