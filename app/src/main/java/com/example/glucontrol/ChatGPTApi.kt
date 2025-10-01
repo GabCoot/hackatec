@@ -8,7 +8,7 @@ import java.io.IOException
 
 object ChatGPTApi {
 
-    private const val API_KEY = "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"
+    private const val API_KEY = "API AQUI VA"
     private const val URL = "https://api.openai.com/v1/chat/completions"
 
     fun sendMessage(message: String, callback: (String) -> Unit) {
