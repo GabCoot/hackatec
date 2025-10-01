@@ -32,13 +32,6 @@
                     android:textSize="22sp"
                     android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/logoImage"
-                    android:layout_width="130dp"
-                    android:layout_height="91dp"
-                    android:layout_alignParentEnd="true"
-                    android:contentDescription="Logo"
-                    android:src="@drawable/optidia" />
             </RelativeLayout>
 
             <!-- Tarjeta Medicina -->
